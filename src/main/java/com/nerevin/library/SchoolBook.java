@@ -41,7 +41,5 @@ public class SchoolBook implements IArt{
         this.AuthorName = AuthorName;
     }
 
-    public String getType() {
-        return "School Book";
-    }
+    public String getType() { return "Учебник"; }
 }

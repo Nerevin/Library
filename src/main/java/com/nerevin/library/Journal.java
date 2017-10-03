@@ -4,6 +4,13 @@ public class Journal implements IArt{
      private String Sheets, ArtName, AuthorName;
         private int Cost;
 
+        Journal(int Cost, String ArtName, String Sheets, String AuthorName){
+        this.Cost = Cost;
+        this.ArtName = ArtName;
+        this.Sheets = Sheets;
+        this.AuthorName = AuthorName;
+    }
+
         public int getCost() {
             return this.Cost;
         }
@@ -27,20 +34,16 @@ public class Journal implements IArt{
         public void setArtName(String ArtName) {
             this.ArtName = ArtName;
         }
+
         public String getAuthorName(){
         return this.AuthorName;
         }
+
         public void setAuthorName(String AuthorName){
         this.AuthorName = AuthorName;
         }
-        Journal(int Cost, String ArtName, String Sheets, String AuthorName){
-        this.Cost = Cost;
-        this.ArtName = ArtName;
-        this.Sheets = Sheets;
-        this.AuthorName = AuthorName;
-        }
-    public String getType() {
-        return "Journal";
-    }
+
+        public String getType(){return "Журнал";}
+
 }
 

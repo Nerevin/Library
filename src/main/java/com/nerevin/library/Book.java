@@ -3,6 +3,14 @@ package com.nerevin.library;
 public class Book implements IArt {
     private String sheets, ArtName, AuthorName;
     private int Cost;
+
+    Book(int Cost, String ArtName, String sheets, String AuthorName){
+        this.Cost = Cost;
+        this.ArtName = ArtName;
+        this.sheets = sheets;
+        this.AuthorName = AuthorName;
+    }
+
     public int getCost(){
         return this.Cost;
     }
@@ -27,18 +35,9 @@ public class Book implements IArt {
     public void setAuthorName(String AuthorName){
         this.AuthorName = AuthorName;
     }
-    Book(int Cost, String ArtName, String sheets, String AuthorName){
-        this.Cost = Cost;
-        this.ArtName = ArtName;
-        this.sheets = sheets;
-        this.AuthorName = AuthorName;
-    }
+
     public String getType() {
-        return "Book";
+        return "Книга";
     }
     
-    @Override
-    public String toString() {
-        return Cost + sheets + ArtName + AuthorName;
-    }
 }
