@@ -1,37 +1,37 @@
 package com.nerevin.library;
 
 public class Author implements IAuthor {
-    private String Name, Surname, AuthorBook;
-    private int Age;
+    private String name, surname, authorBook;
+    private int age;
 
     public int getAge(){
-        return this.Age;
+        return this.age;
     }
-    public void setAge(int Age){
-        this.Age = Age;
+    public void setAge(int age){
+        this.age = age;
     }
     public String getName(){
-        return this.Name;
+        return this.name;
     }
-    public void setName(String Name){
-        this.Name = Name;
+    public void setName(String name){
+        this.name = name;
     }
     public String getSurname(){
-        return this.Surname;
+        return this.surname;
     }
-    public void setSurname(String Surname){
-        this.Surname = Surname;
+    public void setSurname(String surname){
+        this.surname = surname;
     }
     public String getAuthorBook(){
-        return this.AuthorBook;
+        return this.authorBook;
     }
     public void setAuthorBook(String AuthorBook){
-        this.AuthorBook = AuthorBook;
+        this.authorBook = AuthorBook;
     }
-    Author(int Age, String Name, String Surname, String AuthorBook){
-        this.Age = Age;
-        this.Name = Name;
-        this.Surname = Surname;
-        this.AuthorBook = AuthorBook;
+    Author(int age, String name, String surname, String authorBook){
+        this.age = age;
+        this.name = name;
+        this.surname = surname;
+        this.authorBook = authorBook;
     }
 }

@@ -1,21 +1,21 @@
 package com.nerevin.library;
 
 public class Book implements IArt {
-    private String sheets, ArtName, AuthorName;
-    private int Cost;
+    private String sheets, artName, authorName;
+    private int cost;
 
-    Book(int Cost, String ArtName, String sheets, String AuthorName){
-        this.Cost = Cost;
-        this.ArtName = ArtName;
+    Book(int cost, String artName, String sheets, String authorName){
+        this.cost = cost;
+        this.artName = artName;
         this.sheets = sheets;
-        this.AuthorName = AuthorName;
+        this.authorName = authorName;
     }
 
     public int getCost(){
-        return this.Cost;
+        return this.cost;
     }
-    public void setCost(int Cost){
-        this.Cost = Cost;
+    public void setCost(int cost){
+        this.cost = cost;
     }
     public String getSheets(){
         return this.sheets;
@@ -24,16 +24,16 @@ public class Book implements IArt {
         this.sheets = sheets;
     }
     public String getArtName(){
-        return this.ArtName;
+        return this.artName;
     }
-    public void setArtName(String ArtName){
-        this.ArtName = ArtName;
+    public void setArtName(String artName){
+        this.artName = artName;
     }
     public String getAuthorName(){
-        return this.AuthorName;
+        return this.authorName;
     }
-    public void setAuthorName(String AuthorName){
-        this.AuthorName = AuthorName;
+    public void setAuthorName(String authorName){
+        this.authorName = authorName;
     }
 
     public String getType() {

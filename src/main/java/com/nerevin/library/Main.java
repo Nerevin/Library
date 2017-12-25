@@ -1,8 +1,7 @@
 package com.nerevin.library;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -27,20 +26,6 @@ public class Main {
         IArt strit = new Journal(228, "Гуляева стрит", "1488", "Вася Пупкин");
         IArt jumor = new Journal(228, "Мои любимые юморески", "1488", "Армен Ванбюрен");
         IArt ulica = new Journal(228, "Почему я не меняю фамилию", "1488", "Армен Ванбюрен");
-
-        /*List<Book> artList = new ArrayList<>();
-        artList.add(alieparusa);
-        artList.add(onegin);
-        artList.add(soul);
-        artList.add(vii);
-        artList.add(java);
-        artList.add(c);
-        artList.add(road);
-        artList.add(businmanass);
-        artList.add(vesti);
-        artList.add(strit);
-        artList.add(jumor);
-        artList.add(ulica);*/
 
         Scanner in = new Scanner(System.in);
         System.out.println("Выберите автора:\n 1.Александр Пушкин\n 2.Николай Гоголь\n 3.Брюс Эккель\n 4.Билл Гейтьс\n 5.Вася Пупкин\n 6.Армен Ванбюррен");

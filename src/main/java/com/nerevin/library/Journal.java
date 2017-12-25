@@ -1,49 +1,51 @@
 package com.nerevin.library;
 
-public class Journal implements IArt{
-     private String Sheets, ArtName, AuthorName;
-        private int Cost;
+public class Journal implements IArt {
+    private String sheets, artName, authorName;
+    private int cost;
 
-        Journal(int Cost, String ArtName, String Sheets, String AuthorName){
-        this.Cost = Cost;
-        this.ArtName = ArtName;
-        this.Sheets = Sheets;
-        this.AuthorName = AuthorName;
+    Journal(int cost, String artName, String sheets, String authorName) {
+        this.cost = cost;
+        this.artName = artName;
+        this.sheets = sheets;
+        this.authorName = authorName;
     }
 
-        public int getCost() {
-            return this.Cost;
-        }
+    public int getCost() {
+        return this.cost;
+    }
 
-        public void setCost(int Cost) {
-            this.Cost = Cost;
-        }
+    public void setCost(int Cost) {
+        this.cost = Cost;
+    }
 
-        public String getSheets() {
-            return this.Sheets;
-        }
+    public String getSheets() {
+        return this.sheets;
+    }
 
-        public void setSheets(String Sheets) {
-            this.Sheets = Sheets;
-        }
+    public void setSheets(String sheets) {
+        this.sheets = sheets;
+    }
 
-        public String getArtName() {
-            return this.ArtName;
-        }
+    public String getArtName() {
+        return this.artName;
+    }
 
-        public void setArtName(String ArtName) {
-            this.ArtName = ArtName;
-        }
+    public void setArtName(String artName) {
+        this.artName = artName;
+    }
 
-        public String getAuthorName(){
-        return this.AuthorName;
-        }
+    public String getAuthorName() {
+        return this.authorName;
+    }
 
-        public void setAuthorName(String AuthorName){
-        this.AuthorName = AuthorName;
-        }
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
 
-        public String getType(){return "Журнал";}
+    public String getType() {
+        return "Журнал";
+    }
 
 }
 
