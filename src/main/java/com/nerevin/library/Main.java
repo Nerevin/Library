@@ -1,8 +1,14 @@
 package com.nerevin.library;
 
-import java.util.Scanner;
+import com.nerevin.library.entities.*;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 
+@ComponentScan
+@EnableAutoConfiguration
 public class Main {
     public static void main(String[] args) {
         Author pushkin = new Author(37, "Александр", "Пушкин", "Алые паруса\n Евгений Онегин");
@@ -27,38 +33,8 @@ public class Main {
         IArt jumor = new Journal(228, "Мои любимые юморески", "1488", "Армен Ванбюрен");
         IArt ulica = new Journal(228, "Почему я не меняю фамилию", "1488", "Армен Ванбюрен");
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Выберите автора:\n 1.Александр Пушкин\n 2.Николай Гоголь\n 3.Брюс Эккель\n 4.Билл Гейтьс\n 5.Вася Пупкин\n 6.Армен Ванбюррен");
-        switch (in.nextLine()) {
-            case "1" :
-                System.out.println(pushkin.getAuthorBook());
-                break;
-
-            case "2" :
-                System.out.println(gogol.getAuthorBook());
-                break;
-
-            case "3" :
-                System.out.println(eckel.getAuthorBook());
-                break;
-
-            case "4" :
-                System.out.println(gates.getAuthorBook());
-                break;
-
-            case "5" :
-                System.out.println(pupkin.getAuthorBook());
-                break;
-
-            case "6" :
-                System.out.println(lupkin.getAuthorBook());
-                break;
-
-            default :
-                System.out.println("Некорректный выбор");
-                break;
+        SpringApplication.run(Main.class, args);
 
 
-        }
     }
 }

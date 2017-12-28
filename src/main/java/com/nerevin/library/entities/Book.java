@@ -1,37 +1,36 @@
-package com.nerevin.library;
+package com.nerevin.library.entities;
 
-public class SchoolBook implements IArt{
+public class Book implements IArt {
     private String sheets, artName, authorName;
     private int cost;
 
-    SchoolBook(int cost, String artName, String sheets, String authorName){
+    public Book(int cost, String artName, String sheets, String authorName){
         this.cost = cost;
         this.artName = artName;
         this.sheets = sheets;
         this.authorName = authorName;
     }
+    public Book(String artName, String authorName){
+        this.artName = artName;
+        this.authorName = authorName;
+    }
 
-    public int getCost() {
+    public int getCost(){
         return this.cost;
     }
-
-    public void setCost(int cost) {
+    public void setCost(int cost){
         this.cost = cost;
     }
-
-    public String getSheets() {
+    public String getSheets(){
         return this.sheets;
     }
-
-    public void setSheets(String sheets) {
+    public void setSheets(String sheets){
         this.sheets = sheets;
     }
-
-    public String getArtName() {
+    public String getArtName(){
         return this.artName;
     }
-
-    public void setArtName(String artName) {
+    public void setArtName(String artName){
         this.artName = artName;
     }
     public String getAuthorName(){
@@ -41,5 +40,8 @@ public class SchoolBook implements IArt{
         this.authorName = authorName;
     }
 
-    public String getType() { return "Учебник"; }
+    public String getType() {
+        return "Книга";
+    }
+    
 }

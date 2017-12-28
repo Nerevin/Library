@@ -1,4 +1,4 @@
-package com.nerevin.library;
+package com.nerevin.library.entities;
 
 public class Author implements IAuthor {
     private String name, surname, authorBook;
@@ -28,7 +28,7 @@ public class Author implements IAuthor {
     public void setAuthorBook(String AuthorBook){
         this.authorBook = AuthorBook;
     }
-    Author(int age, String name, String surname, String authorBook){
+    public Author(int age, String name, String surname, String authorBook){
         this.age = age;
         this.name = name;
         this.surname = surname;

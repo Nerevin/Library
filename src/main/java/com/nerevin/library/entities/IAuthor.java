@@ -1,4 +1,4 @@
-package com.nerevin.library;
+package com.nerevin.library.entities;
 
 public interface IAuthor {
     int getAge();

@@ -1,10 +1,10 @@
-package com.nerevin.library;
+package com.nerevin.library.entities;
 
 public class Journal implements IArt {
     private String sheets, artName, authorName;
     private int cost;
 
-    Journal(int cost, String artName, String sheets, String authorName) {
+    public Journal(int cost, String artName, String sheets, String authorName) {
         this.cost = cost;
         this.artName = artName;
         this.sheets = sheets;
